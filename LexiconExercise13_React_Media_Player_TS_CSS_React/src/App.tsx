@@ -3,7 +3,7 @@ import "./css/base.css";
 
 import { MediaActionButtons } from "./components/MediaActionButtons";
 import { TrackBar } from "./components/TrackBar";
-import { Icon } from "./components/Icon";
+
 import { NowPlaying } from "./components/NowPlaying";
 
 function App() {
