@@ -1,11 +1,17 @@
 import { useState } from "react";
 import "./css/base.css";
-import { PlayButton } from "./components/PlayButton";
+
+import { MediaActionButtons } from "./components/MediaActionButtons";
+import { TrackBar } from "./components/TrackBar";
+import { Icon } from "./components/Icon";
+import { NowPlaying } from "./components/NowPlaying";
 
 function App() {
   return (
     <>
-      <PlayButton className="Player"></PlayButton>
+      <NowPlaying artist="Like we used to" trackTitle="A Rocket to the moon" />
+      <TrackBar trackLength={260} />
+      <MediaActionButtons />
     </>
   );
 }
