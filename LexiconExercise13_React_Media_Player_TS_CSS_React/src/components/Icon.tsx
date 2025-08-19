@@ -15,7 +15,6 @@ interface IIconProp {
  * @param iconName - The specific Material Symbols icon to render.
  * @returns A React element representing the icon.
  */
-
 export function Icon({ className, iconName }: IIconProp): ReactElement {
   return (
     <span className={`${className} material-symbols-outlined`}>{iconName}</span>

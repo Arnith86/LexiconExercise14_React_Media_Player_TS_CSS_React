@@ -14,7 +14,6 @@ interface ITrackBarProp {
  * - The `value/currentTime` is currently hardcoded to `40` and should be replaced with a state
  *   value representing the current playback position (`currentTime`).
  **/
-
 export function TrackBar({ trackLength }: ITrackBarProp): ReactElement {
   return (
     <section className="track-bar">

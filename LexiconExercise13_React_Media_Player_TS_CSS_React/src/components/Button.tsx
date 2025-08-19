@@ -21,7 +21,6 @@ interface IButtonProp {
  * <Button className="playlist-button" buttonString="Add to Playlist" />
  * ```
  */
-
 export function Button({
   className,
   iconName,

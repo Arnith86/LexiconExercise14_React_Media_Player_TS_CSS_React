@@ -1,5 +1,4 @@
 import type { ReactElement } from "react";
-
 import { Button } from "./Button";
 
 interface INowPlayingProp {
@@ -15,7 +14,6 @@ interface INowPlayingProp {
  *
  * This component uses the reusable {@link Button} component for actions.
  */
-
 export function NowPlaying({
   artist,
   trackTitle,

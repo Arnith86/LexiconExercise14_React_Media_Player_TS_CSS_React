@@ -1,5 +1,4 @@
 import type { ReactElement } from "react";
-import { Icon } from "./Icon";
 import { Button } from "./Button";
 
 /**
@@ -21,7 +20,6 @@ import { Button } from "./Button";
  * <MediaActionButtons />
  * ```
  */
-
 export function MediaActionButtons(): ReactElement {
   return (
     <menu className="media-action-buttons">
