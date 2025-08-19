@@ -1,8 +1,13 @@
 import { useState } from "react";
 import "./css/base.css";
+import { PlayButton } from "./components/PlayButton";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <PlayButton className="Player"></PlayButton>
+    </>
+  );
 }
 
 export default App;
