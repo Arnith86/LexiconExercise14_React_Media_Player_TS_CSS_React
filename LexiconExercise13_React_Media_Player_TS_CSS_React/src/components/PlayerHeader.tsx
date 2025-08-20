@@ -9,9 +9,7 @@ export function PlayerHeader({
 }: IPlayerHeaderProp): ReactElement {
   return (
     <section className="header">
-      <h1>
-        <p>Playlist - {playListName}</p>
-      </h1>
+      <h1>Playlist - {playListName}</h1>
     </section>
   );
 }
