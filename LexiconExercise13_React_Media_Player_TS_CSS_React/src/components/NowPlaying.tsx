@@ -22,9 +22,7 @@ export function NowPlaying({
   return (
     <section className="now-playing">
       <Button className="add-playList-button" iconName={"add_circle"} />
-
       <TrackInfo artist={artist} trackTitle={trackTitle} />
-
       <Button className="add-favorite-button" iconName={"favorite"} />
     </section>
   );
