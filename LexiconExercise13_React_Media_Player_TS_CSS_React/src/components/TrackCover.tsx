@@ -21,7 +21,7 @@ export function TrackCover({
 }: ITrackCoverProp): ReactElement {
   return (
     <figure className="track-cover-image">
-      <img src={imageSrc} alt={altText} />
+      <img src={imageSrc} alt={`${altText} cover`} />
     </figure>
   );
 }

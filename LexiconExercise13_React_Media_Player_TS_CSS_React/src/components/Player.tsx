@@ -11,16 +11,15 @@ interface IPlayerProp {
 }
 
 export function Player({ trackData }: IPlayerProp): ReactElement {
+  const { cover, title, artist, length } = trackData;
+
   return (
     <section>
-      <TrackCover
-        imageSrc={trackData.cover}
-        altText={`${trackData.title} cover`}
-      />
-      <NowPlaying artist="Like we used to" trackTitle="A Rocket to the moon" />
-      <TrackBar trackLength={trackData.length} />
+      <TrackCover imageSrc={cover} altText={`${title} cover`} />
+      <NowPlaying artist={artist} trackTitle={title} />
+      <TrackBar trackLength={length} />
       <MediaActionButtons />
-      <BackgroundCoverBlurred coverUrl={trackData.cover} />
+      <BackgroundCoverBlurred coverUrl={cover} />
     </section>
   );
 }

@@ -1,5 +1,6 @@
 import type { ReactElement } from "react";
 import { Button } from "./Button";
+import { TrackInfo } from "./TrackInfo";
 
 interface INowPlayingProp {
   artist: string;
@@ -22,10 +23,7 @@ export function NowPlaying({
     <section className="now-playing">
       <Button className="add-playList-button" iconName={"add_circle"} />
 
-      <span className="track-info">
-        <h2 className="artist-alias">{artist}</h2>
-        <p className="track-title">{trackTitle}</p>
-      </span>
+      <TrackInfo artist={artist} trackTitle={trackTitle} />
 
       <Button className="add-favorite-button" iconName={"favorite"} />
     </section>
