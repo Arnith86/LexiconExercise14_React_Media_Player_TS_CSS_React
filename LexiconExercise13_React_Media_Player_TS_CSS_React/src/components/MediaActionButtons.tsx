@@ -14,11 +14,6 @@ import { Button } from "./Button";
  *
  * It uses the reusable {@link Button} component with material icons
  * to provide consistent styling and behavior.
- *
- * @example
- * ```tsx
- * <MediaActionButtons />
- * ```
  */
 export function MediaActionButtons(): ReactElement {
   return (

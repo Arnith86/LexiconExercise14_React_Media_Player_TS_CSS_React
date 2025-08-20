@@ -1,4 +1,7 @@
 .g-button {
   border: none;
   background: none;
+  cursor: pointer;
+  width: auto;
+  height: auto;
 }

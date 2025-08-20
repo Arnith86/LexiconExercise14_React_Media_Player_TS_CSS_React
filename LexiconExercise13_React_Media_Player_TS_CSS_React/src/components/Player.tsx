@@ -14,7 +14,7 @@ export function Player({ trackData }: IPlayerProp): ReactElement {
   const { cover, title, artist, length } = trackData;
 
   return (
-    <section>
+    <section className="player">
       <TrackCover imageSrc={cover} altText={`${title} cover`} />
       <NowPlaying artist={artist} trackTitle={title} />
       <TrackBar trackLength={length} />

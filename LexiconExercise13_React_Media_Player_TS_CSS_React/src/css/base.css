@@ -1,10 +1,18 @@
 @import url("./button.css");
+@import url("./header.css");
+@import url("./player.css");
 
 * {
   box-sizing: border-box;
   margin: 0;
   color: rgba(245, 245, 245, 0.884);
   font-family: "Inter", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 img {
