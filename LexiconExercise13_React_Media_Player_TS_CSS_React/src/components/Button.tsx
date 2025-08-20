@@ -27,7 +27,7 @@ export function Button({
   buttonString,
 }: IButtonProp): ReactElement {
   return (
-    <button className={className}>
+    <button className={`g-button ${className}`}>
       {iconName ? (
         <Icon className="button-icon" iconName={iconName} />
       ) : (

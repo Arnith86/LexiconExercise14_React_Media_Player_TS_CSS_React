@@ -1,6 +1,10 @@
+@import url("./button.css");
+
 * {
   box-sizing: border-box;
   margin: 0;
+  color: rgba(245, 245, 245, 0.884);
+  font-family: "Inter", sans-serif;
 }
 
 img {
