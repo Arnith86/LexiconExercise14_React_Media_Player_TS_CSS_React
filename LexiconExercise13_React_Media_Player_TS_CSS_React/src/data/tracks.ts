@@ -1,17 +1,17 @@
 import type { IMusicTrack } from "../types/IMusicTrack";
 
-import cover1 from "../assets/covers/cover1.jpg";
-import cover2 from "../assets/covers/cover2.jpg";
-import cover3 from "../assets/covers/cover3.jpg";
-import cover4 from "../assets/covers/cover4.jpg";
-import cover5 from "../assets/covers/cover5.jpg";
-import cover6 from "../assets/covers/cover6.jpg";
-import cover7 from "../assets/covers/cover7.jpg";
-import cover8 from "../assets/covers/cover8.jpg";
-import cover9 from "../assets/covers/cover9.jpg";
-import cover10 from "../assets/covers/cover10.jpg";
-import cover11 from "../assets/covers/cover11.jpg";
-import cover12 from "../assets/covers/cover12.jpg";
+import cover1 from "../assets/covers/cover-1.jpg";
+import cover2 from "../assets/covers/cover-2.jpg";
+import cover3 from "../assets/covers/cover-3.jpg";
+import cover4 from "../assets/covers/cover-4.jpg";
+import cover5 from "../assets/covers/cover-5.jpg";
+import cover6 from "../assets/covers/cover-6.jpg";
+import cover7 from "../assets/covers/cover-7.jpg";
+import cover8 from "../assets/covers/cover-8.jpg";
+import cover9 from "../assets/covers/cover-9.jpg";
+import cover10 from "../assets/covers/cover-10.jpg";
+import cover11 from "../assets/covers/cover-11.jpg";
+import cover12 from "../assets/covers/cover-12.jpg";
 
 export const tracks: IMusicTrack[] = [
   {

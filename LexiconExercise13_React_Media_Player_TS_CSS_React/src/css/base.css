@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  max-width: 300px; /*move when proper styling is performed*/
+}
+
+.cover-background {
+  background-image: var(--cover-url);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px) brightness(0.4);
+}
+
+.cover-background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 2, 56, 0.5);
+}
+
+.blurred-background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
