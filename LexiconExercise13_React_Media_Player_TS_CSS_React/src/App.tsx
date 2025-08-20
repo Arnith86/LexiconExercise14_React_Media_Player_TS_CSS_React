@@ -8,6 +8,7 @@ import { TrackCover } from "./components/TrackCover";
 import { tracks } from "./data/tracks";
 import type { IMusicTrack } from "./types/IMusicTrack";
 import { PlayerHeader } from "./components/PlayerHeader";
+import { BackgroundCoverBlurred } from "./components/BackgroundCoverBlurred";
 
 function App() {
   const testCover: IMusicTrack = tracks[2];
@@ -22,14 +23,7 @@ function App() {
       <NowPlaying artist="Like we used to" trackTitle="A Rocket to the moon" />
       <TrackBar trackLength={260} />
       <MediaActionButtons />
-
-      {/** i dont understand this part at all yet, but i wanted it included :) */}
-      <div
-        className="blurred-background-image"
-        style={{ "--cover-url": `url(${testCover.cover})` } as any}
-      >
-        <div className="cover-background" />
-      </div>
+      <BackgroundCoverBlurred coverUrl={testCover.cover} />
     </>
   );
 }
