@@ -12,7 +12,7 @@ interface IPlayerProp {
 
 export function Player({ trackData }: IPlayerProp): ReactElement {
   return (
-    <article>
+    <section>
       <TrackCover
         imageSrc={trackData.cover}
         altText={`${trackData.title} cover`}
@@ -21,6 +21,6 @@ export function Player({ trackData }: IPlayerProp): ReactElement {
       <TrackBar trackLength={trackData.length} />
       <MediaActionButtons />
       <BackgroundCoverBlurred coverUrl={trackData.cover} />
-    </article>
+    </section>
   );
 }
