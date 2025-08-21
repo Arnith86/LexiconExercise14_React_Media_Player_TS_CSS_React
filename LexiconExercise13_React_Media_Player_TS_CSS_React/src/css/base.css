@@ -5,6 +5,7 @@
 @import url("./track-cover.css");
 @import url("./track-info.css");
 @import url("./track-bar.css");
+@import url("./media-action-button.css");
 
 html {
   --main-color: rgba(245, 245, 245, 0.884);

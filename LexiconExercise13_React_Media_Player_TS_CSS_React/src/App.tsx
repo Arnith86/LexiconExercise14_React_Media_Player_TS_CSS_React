@@ -7,7 +7,7 @@ import { PlayerHeader } from "./components/PlayerHeader";
 import { PlayList } from "./components/PlayList";
 
 function App() {
-  const defaultTrack: IMusicTrack = tracks[8];
+  const defaultTrack: IMusicTrack = tracks[10];
   const testPlaylistName: string = "Moody";
   return (
     <main>
