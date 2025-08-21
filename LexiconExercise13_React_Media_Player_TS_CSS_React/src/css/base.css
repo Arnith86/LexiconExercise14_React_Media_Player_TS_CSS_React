@@ -1,6 +1,7 @@
 @import url("./button.css");
 @import url("./header.css");
 @import url("./player.css");
+@import url("./track-cover.css");
 
 * {
   box-sizing: border-box;
@@ -9,6 +10,9 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  background-color: black;
+}
 main {
   display: flex;
   flex-direction: column;
