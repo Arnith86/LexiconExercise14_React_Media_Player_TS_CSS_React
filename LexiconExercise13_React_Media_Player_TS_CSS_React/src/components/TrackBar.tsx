@@ -1,8 +1,11 @@
+import { secondsToMMSS } from "../helpers/helper";
 import type { ReactElement } from "react";
 
 interface ITrackBarProp {
   trackLength: number;
 }
+//used as a temporary variable simulating track progress, should be replaced with real values.
+const currentTime: number = 40;
 
 /**
  * TrackBar component
@@ -20,14 +23,16 @@ export function TrackBar({ trackLength }: ITrackBarProp): ReactElement {
       {/* <audio>
           the actual audio track goes here i think.
         </audio> */}
+      <p className="current-track-time">{secondsToMMSS(currentTime)}</p>
       <input
         type="range"
         min={0}
         max={trackLength}
         value={
-          40
+          currentTime
         } /*currentTime needs some kind of event handler to keep track of currentTime*/
       />
+      <p className="track-length-time">{secondsToMMSS(trackLength)}</p>
     </section>
   );
 }

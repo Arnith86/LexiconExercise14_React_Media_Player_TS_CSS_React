@@ -4,6 +4,7 @@
 @import url("./now-playing.css");
 @import url("./track-cover.css");
 @import url("./track-info.css");
+@import url("./track-bar.css");
 
 html {
   --main-color: rgba(245, 245, 245, 0.884);

@@ -1,0 +1,24 @@
+.track-bar {
+  width: 90%;
+  display: grid;
+  grid-template: 1fr repeat(4, 1fr) 1fr;
+}
+.current-track-time {
+  grid-column: 1 /2;
+}
+
+.track-length-time {
+  grid-column: 5 / 6;
+}
+
+.current-track-time,
+.track-length-time {
+  width: auto;
+  justify-self: center;
+
+  font-size: 0.7rem;
+}
+
+.track-bar input {
+  grid-column: 2 / 5;
+}
