@@ -5,3 +5,7 @@
   width: auto;
   height: auto;
 }
+
+.button-active .button-icon {
+  color: var(--grayed-out-button);
+}

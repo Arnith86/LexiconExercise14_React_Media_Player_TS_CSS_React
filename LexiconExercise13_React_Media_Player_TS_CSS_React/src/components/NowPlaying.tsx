@@ -21,9 +21,17 @@ export function NowPlaying({
 }: INowPlayingProp): ReactElement {
   return (
     <section className="now-playing">
-      <Button className="add-playList-button" iconName={"add_circle"} />
+      <Button
+        className="add-playList-button"
+        iconName={"add_circle"}
+        isToggleButton={true}
+      />
       <TrackInfo artist={artist} trackTitle={trackTitle} />
-      <Button className="add-favorite-button" iconName={"favorite"} />
+      <Button
+        className="add-favorite-button"
+        iconName={"favorite"}
+        isToggleButton={true}
+      />
     </section>
   );
 }
