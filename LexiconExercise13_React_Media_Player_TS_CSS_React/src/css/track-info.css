@@ -1,0 +1,15 @@
+.track-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.track-info .artist-alias {
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.track-info .track-title {
+  color: var(--main-color-weaker);
+  font-size: 0.9rem;
+}

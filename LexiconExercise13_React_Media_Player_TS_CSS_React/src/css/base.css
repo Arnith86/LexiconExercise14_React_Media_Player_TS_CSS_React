@@ -3,10 +3,12 @@
 @import url("./player.css");
 @import url("./now-playing.css");
 @import url("./track-cover.css");
+@import url("./track-info.css");
 
 html {
   --main-color: rgba(245, 245, 245, 0.884);
-  --grayed-out-button: rgba(245, 245, 245, 0.4);
+  --main-color-weaker: rgba(245, 245, 245, 0.7);
+  --grayed-out: rgba(245, 245, 245, 0.4);
 }
 
 * {

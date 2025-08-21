@@ -7,5 +7,5 @@
 }
 
 .button-active .button-icon {
-  color: var(--grayed-out-button);
+  color: var(--grayed-out);
 }
