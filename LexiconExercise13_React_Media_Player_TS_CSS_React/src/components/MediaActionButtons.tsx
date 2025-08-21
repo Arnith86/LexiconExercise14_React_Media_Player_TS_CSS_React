@@ -18,11 +18,19 @@ import { Button } from "./Button";
 export function MediaActionButtons(): ReactElement {
   return (
     <menu className="media-action-buttons">
-      <Button className="repeat-button" iconName={"repeat"} />
+      <Button
+        className="repeat-button"
+        iconName={"repeat"}
+        isToggleButton={true}
+      />
       <Button className="previous-button" iconName={"fast_rewind"} />
       <Button className="play-button" iconName={"play_circle"} />
       <Button className="next-button" iconName={"fast_forward"} />
-      <Button className="shuffle-button" iconName={"shuffle"} />
+      <Button
+        className="shuffle-button"
+        iconName={"shuffle"}
+        isToggleButton={true}
+      />
     </menu>
   );
 }

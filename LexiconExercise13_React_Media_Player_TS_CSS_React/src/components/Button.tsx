@@ -79,7 +79,9 @@ export function Button({
 
   return (
     <button
-      className={`g-button ${className} ${isActive ? "button-active" : ""}`}
+      className={`g-button ${className} ${
+        !isActive && isToggleButton ? "button-active" : ""
+      }`}
       onClick={handleClick}
     >
       {iconName ? (
