@@ -2,6 +2,7 @@ import type { ReactElement } from "react";
 import { Button } from "./Button";
 
 interface IPlayerHeaderProp {
+  onClick: () => void;
   playListName: string;
 }
 
@@ -16,10 +17,15 @@ interface IPlayerHeaderProp {
  */
 export function PlayerHeader({
   playListName,
+  onClick,
 }: IPlayerHeaderProp): ReactElement {
   return (
     <section className="header">
-      <Button className="back-header-button" iconName={"keyboard_arrow_left"} />
+      <Button
+        className="back-header-button"
+        iconName={"keyboard_arrow_left"}
+        onClick={onClick}
+      />
       <h1>Playlist - {playListName}</h1>
       <Button className="kebab-header-button" iconName={"more_vert"} />{" "}
       {/* Todo: kebab, leads nowhere as of now, add if enough time */}

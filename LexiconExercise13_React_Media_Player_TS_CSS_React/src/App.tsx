@@ -8,24 +8,41 @@ import { PlayList } from "./components/PlayList";
 
 function App() {
   const testPlaylistName: string = "Moody";
-  let activeTrack: IMusicTrack = tracks[0];
 
   const [selectedTrackId, setActiveTrack] = useState<string>(tracks[0].id);
+  const [activeView, setActiveView] = useState<"playlist" | "player">(
+    "playlist"
+  );
+
+  let activeTrack: IMusicTrack = tracks[0];
 
   activeTrack =
     tracks[tracks.findIndex((track) => track.id === selectedTrackId)];
+
+  const handleActiveView = () => {
+    const nextView = activeView !== "playlist" ? "playlist" : "player";
+    setActiveView(nextView);
+  };
+
   const handleTrackActiveSelect = (id: string) => {
     setActiveTrack(id);
   };
 
   return (
     <main>
-      <PlayerHeader playListName={testPlaylistName} />
-      <Player trackData={activeTrack} />
+      <PlayerHeader
+        playListName={testPlaylistName}
+        onClick={handleActiveView}
+      />
       <PlayList
+        className={activeView === "playlist" ? "active" : ""}
         tracks={tracks}
         selectedTrackId={activeTrack.id}
         onSelectTrack={handleTrackActiveSelect}
+      />
+      <Player
+        trackData={activeTrack}
+        className={activeView === "player" ? "active" : ""}
       />
     </main>
   );

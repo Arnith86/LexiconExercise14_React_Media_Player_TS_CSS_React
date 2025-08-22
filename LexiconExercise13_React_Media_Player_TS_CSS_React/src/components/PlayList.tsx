@@ -3,6 +3,7 @@ import type { IMusicTrack } from "../types/IMusicTrack";
 import { PlayListItem } from "./PlayListItem";
 
 interface IPlayListProp {
+  className: string;
   tracks: IMusicTrack[];
   selectedTrackId: string;
   onSelectTrack: (id: string) => void;
@@ -38,12 +39,13 @@ interface IPlayListProp {
  * @returns A React element rendering the playlist section with track items
  */
 export function PlayList({
+  className,
   tracks,
   selectedTrackId,
   onSelectTrack,
 }: IPlayListProp): ReactElement {
   return (
-    <section className="playlist background">
+    <section className={`playlist background ${className}`}>
       {tracks.map((track) => (
         <PlayListItem
           trackData={track}

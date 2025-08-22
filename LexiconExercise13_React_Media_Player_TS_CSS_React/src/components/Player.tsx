@@ -7,6 +7,7 @@ import { BackgroundCoverBlurred } from "./BackgroundCoverBlurred";
 import type { IMusicTrack } from "../types/IMusicTrack";
 
 interface IPlayerProp {
+  className: string;
   trackData: IMusicTrack;
 }
 
@@ -33,10 +34,10 @@ interface IPlayerProp {
  * @param trackData - Object containing track metadata (artist, title, cover image, and track length)
  * @returns A React element rendering the player with track info, controls, and background
  */
-export function Player({ trackData }: IPlayerProp): ReactElement {
+export function Player({ className, trackData }: IPlayerProp): ReactElement {
   const { cover, title, artist, length } = trackData;
   return (
-    <section className="player">
+    <section className={`player ${className}`}>
       <TrackCover imageSrc={cover} altText={`${title} cover`} />
       <NowPlaying artist={artist} trackTitle={title} />
       <TrackBar trackLength={length} />
