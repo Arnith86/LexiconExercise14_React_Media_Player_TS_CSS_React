@@ -8,6 +8,8 @@
 @import url("./media-action-button.css");
 @import url("./playlist-item.css");
 @import url("./cover-background.css");
+@import url("./app.css");
+@import url("./playlist.css");
 
 html {
   --main-color: rgba(245, 245, 245, 0.884);
@@ -25,10 +27,5 @@ html {
 
 body {
   background-color: black;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+  /* height: 100vh; */
 }

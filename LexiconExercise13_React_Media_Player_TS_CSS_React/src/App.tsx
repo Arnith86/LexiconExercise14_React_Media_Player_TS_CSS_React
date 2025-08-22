@@ -7,13 +7,26 @@ import { PlayerHeader } from "./components/PlayerHeader";
 import { PlayList } from "./components/PlayList";
 
 function App() {
-  const defaultTrack: IMusicTrack = tracks[11];
   const testPlaylistName: string = "Moody";
+  let activeTrack: IMusicTrack = tracks[0];
+
+  const [selectedTrackId, setActiveTrack] = useState<string>(tracks[0].id);
+
+  activeTrack =
+    tracks[tracks.findIndex((track) => track.id === selectedTrackId)];
+  const handleTrackActiveSelect = (id: string) => {
+    setActiveTrack(id);
+  };
+
   return (
     <main>
       <PlayerHeader playListName={testPlaylistName} />
-      <Player trackData={defaultTrack} />
-      <PlayList tracks={tracks} selectedTrackId={defaultTrack.id} />
+      <Player trackData={activeTrack} />
+      <PlayList
+        tracks={tracks}
+        selectedTrackId={activeTrack.id}
+        onSelectTrack={handleTrackActiveSelect}
+      />
     </main>
   );
 }
