@@ -7,13 +7,13 @@ import { PlayerHeader } from "./components/PlayerHeader";
 import { PlayList } from "./components/PlayList";
 
 function App() {
-  const defaultTrack: IMusicTrack = tracks[10];
+  const defaultTrack: IMusicTrack = tracks[11];
   const testPlaylistName: string = "Moody";
   return (
     <main>
       <PlayerHeader playListName={testPlaylistName} />
       <Player trackData={defaultTrack} />
-      {/* <PlayList tracks={tracks} selectedTrackId={defaultTrack.id} /> */}
+      <PlayList tracks={tracks} selectedTrackId={defaultTrack.id} />
     </main>
   );
 }

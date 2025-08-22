@@ -6,6 +6,11 @@
   height: auto;
 }
 
+button:hover .button-icon {
+  color: var(--main-color-hover);
+  transition: color 0.2s ease;
+}
+
 .button-active .button-icon {
   color: var(--grayed-out);
 }

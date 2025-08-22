@@ -2,3 +2,11 @@
   aspect-ratio: 1 /1;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
+
+.player img {
+  width: 100%;
+}
+
+.player .track-cover-image {
+  padding: 5% 10%;
+}

@@ -6,10 +6,12 @@
 @import url("./track-info.css");
 @import url("./track-bar.css");
 @import url("./media-action-button.css");
+@import url("./playlist-item.css");
 
 html {
   --main-color: rgba(245, 245, 245, 0.884);
   --main-color-weaker: rgba(245, 245, 245, 0.7);
+  --main-color-hover: rgb(245, 245, 245);
   --grayed-out: rgba(245, 245, 245, 0.4);
 }
 
@@ -29,9 +31,9 @@ main {
   height: 100vh;
 }
 
-img {
-  max-width: 300px; /*move when proper styling is performed*/
-}
+/* img {
+  max-width: 300px; 
+} */
 
 .cover-background {
   background-image: var(--cover-url);
@@ -46,7 +48,7 @@ img {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(16, 2, 56, 0.5);
+  background: rgba(133, 74, 189, 0.5);
 }
 
 .blurred-background-image {
