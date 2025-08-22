@@ -1,6 +1,7 @@
 import type { ReactElement } from "react";
 
 interface IBackgroundCoverBlurredProp {
+  className: string;
   coverUrl: string;
 }
 
@@ -19,11 +20,12 @@ interface IBackgroundCoverBlurredProp {
  * - The `.cover-background` div can be used for additional overlay or styling purposes.
  */
 export function BackgroundCoverBlurred({
+  className,
   coverUrl,
 }: IBackgroundCoverBlurredProp): ReactElement {
   return (
     <div
-      className="blurred-background-image"
+      className={`blurred-background-image ${className}`}
       style={{ "--cover-url": `url(${coverUrl})` } as any}
     >
       <div className="cover-background" />

@@ -48,7 +48,12 @@ export function PlayListItem({
       className={`playlist-item ${isActive ? "active-song" : ""}`}
       onClick={() => onClick(id)}
     >
-      {isActive && <BackgroundCoverBlurred coverUrl={cover} />}
+      {isActive && (
+        <BackgroundCoverBlurred
+          coverUrl={cover}
+          className="playlist-item-cover"
+        />
+      )}
       <TrackCover imageSrc={cover} altText={title} />
       <TrackInfo artist={artist} trackTitle={title} />
       {!isActive ? (

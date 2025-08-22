@@ -1,0 +1,17 @@
+.player-cover,
+.playlist-item-cover {
+  background-image: var(--cover-url);
+  inset: 0;
+  z-index: -1;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px) brightness(0.4);
+}
+
+.cover-background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(133, 74, 189, 0.5);
+}

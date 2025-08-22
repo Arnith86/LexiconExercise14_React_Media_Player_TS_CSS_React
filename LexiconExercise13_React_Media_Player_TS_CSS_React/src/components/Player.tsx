@@ -19,7 +19,7 @@ export function Player({ trackData }: IPlayerProp): ReactElement {
       <NowPlaying artist={artist} trackTitle={title} />
       <TrackBar trackLength={length} />
       <MediaActionButtons />
-      <BackgroundCoverBlurred coverUrl={cover} />
+      <BackgroundCoverBlurred coverUrl={cover} className="player-cover" />
     </section>
   );
 }
