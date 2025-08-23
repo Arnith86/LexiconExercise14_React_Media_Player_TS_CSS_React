@@ -51,7 +51,7 @@ export function NowPlaying({
         }`}
         iconName={"favorite"}
         onClick={() => toggledButton("favoriteButton")}
-        isFilled={true}
+        isFilled={toggledButtons.favoriteButton}
       />
     </section>
   );
