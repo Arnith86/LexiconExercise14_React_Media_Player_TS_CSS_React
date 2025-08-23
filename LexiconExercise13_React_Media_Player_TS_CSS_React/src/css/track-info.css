@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.playlist-item .track-info {
+  align-items: flex-start;
+}
+
 .track-info .artist-alias {
   font-weight: normal;
   font-size: 1.2rem;
@@ -12,4 +16,14 @@
 .track-info .track-title {
   color: var(--main-color-weaker);
   font-size: 0.9rem;
+}
+
+@media screen and (min-width: 1008px) {
+  .track-info .artist-alias {
+    font-size: 1.7rem;
+  }
+
+  .track-info .track-title {
+    font-size: 1.4rem;
+  }
 }
