@@ -3,6 +3,8 @@
 This project is my implementation of the **React Media Player** exercise.  
 You can find the exercise instructions below.
 
+PS: the "JP Comments" are not for the assignment, rather they are meant for me personally as reminders of what or how something works.
+
 # React Media Player
 
 In this exercise you will create a media player using React and TypeScript.
