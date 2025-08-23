@@ -1,4 +1,4 @@
-import type { ReactElement } from "react";
+import { useState, type ReactElement } from "react";
 import { BackgroundCoverBlurred } from "./BackgroundCoverBlurred";
 import type { IMusicTrack } from "../types/IMusicTrack";
 import { TrackCover } from "./TrackCover";
@@ -8,6 +8,8 @@ import { Icon } from "./Icon";
 interface IPlayListItemProp {
   trackData: IMusicTrack;
   isActive?: boolean;
+  // addClick: () => void; // Should return something to enable track to be added to list but this only simulates the action.
+  // favoriteClick: () => void; // Should return something to enable track to be added to list but this only simulates the action.
   onClick: (id: string) => void;
 }
 
@@ -57,9 +59,15 @@ export function PlayListItem({
       <TrackCover imageSrc={cover} altText={title} />
       <TrackInfo artist={artist} trackTitle={title} />
       {!isActive ? (
-        <Icon className="playlist-play-icon active" iconName="play_circle" />
+        <Icon
+          className="playlist-play-icon icon active"
+          iconName="pause_circle"
+        />
       ) : (
-        <Icon className="playlist-play-icon" iconName="play_circle" />
+        <Icon
+          className="playlist-play-icon icon filled"
+          iconName="play_circle"
+        />
       )}
     </article>
   );

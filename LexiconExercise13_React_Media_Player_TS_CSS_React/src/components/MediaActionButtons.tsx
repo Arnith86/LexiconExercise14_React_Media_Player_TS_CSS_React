@@ -1,5 +1,6 @@
 import type { ReactElement } from "react";
 import { Button } from "./Button";
+import { useToggleButtons } from "../helpers/toggledButtonsHock";
 
 /**
  * A UI component that renders the main media player action buttons:
@@ -16,20 +17,41 @@ import { Button } from "./Button";
  * to provide consistent styling and behavior.
  */
 export function MediaActionButtons(): ReactElement {
+  const { toggledButtons, toggledButton } = useToggleButtons({
+    repeatButton: false,
+    shuffleButton: false,
+  });
+
   return (
     <menu className="media-action-buttons">
       <Button
-        className="repeat-button"
+        className={`repeat-button toggle ${
+          toggledButtons.repeatButton === false ? "not-active-button" : ""
+        }`}
         iconName={"repeat"}
-        isToggleButton={true}
+        onClick={() => toggledButton("repeatButton")}
       />
-      <Button className="previous-button" iconName={"fast_rewind"} />
-      <Button className="play-button" iconName={"play_circle"} />
-      <Button className="next-button" iconName={"fast_forward"} />
       <Button
-        className="shuffle-button"
+        className="previous-button"
+        iconName={"fast_rewind"}
+        isFilled={true}
+      />
+      <Button
+        className="play-button"
+        iconName={"play_circle"}
+        isFilled={true}
+      />
+      <Button
+        className="next-button"
+        iconName={"fast_forward"}
+        isFilled={true}
+      />
+      <Button
+        className={`shuffle-button toggle ${
+          toggledButtons.shuffleButton === false ? "not-active-button" : ""
+        }`}
         iconName={"shuffle"}
-        isToggleButton={true}
+        onClick={() => toggledButton("shuffleButton")}
       />
     </menu>
   );

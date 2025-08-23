@@ -20,6 +20,7 @@ main {
 
 @media screen and (max-width: 768px) {
   main {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
     grid-row: 2;
@@ -28,7 +29,8 @@ main {
 
   .playlist,
   .player {
-    display: grid;
+    overflow-y: auto;
+    height: 100%;
     grid-row: 2;
   }
 

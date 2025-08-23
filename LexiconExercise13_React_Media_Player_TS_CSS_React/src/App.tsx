@@ -19,7 +19,7 @@ function App() {
   activeTrack =
     tracks[tracks.findIndex((track) => track.id === selectedTrackId)];
 
-  const handleActiveView = () => {
+  const handleActiveView = (): void => {
     const nextView = activeView !== "playlist" ? "playlist" : "player";
     setActiveView(nextView);
   };

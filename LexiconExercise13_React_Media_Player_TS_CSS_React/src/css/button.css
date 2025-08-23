@@ -11,6 +11,23 @@ button:hover .button-icon {
   transition: color 0.2s ease;
 }
 
-.button-active .button-icon {
+.not-active-button.toggle {
   color: var(--grayed-out);
 }
+
+.button-icon {
+  color: inherit;
+}
+
+.button-icon.filled,
+.icon.filled {
+  font-variation-settings: "FILL" 1;
+}
+
+/* .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+} */
